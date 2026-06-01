@@ -22,7 +22,15 @@ cask "snapshift" do
   app "SnapShift.app"
 
   caveats <<~EOS
-    SnapShift is not notarized by Apple. On first launch, right-click SnapShift in Applications and choose Open.
+    SnapShift is not notarized by Apple, so macOS may block the first launch.
+
+    If you see "Apple could not verify SnapShift.app is free of malware":
+      1. Click Done.
+      2. Open System Settings -> Privacy & Security.
+      3. Scroll to Security and click Open Anyway for SnapShift.
+      4. Open SnapShift again.
+
+    Future launches should open normally.
   EOS
 
   zap trash: [
