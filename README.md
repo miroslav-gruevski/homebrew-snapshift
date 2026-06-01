@@ -8,7 +8,22 @@ Homebrew tap for [SnapShift](https://github.com/miroslav-gruevski/SnapShift) —
 brew install --cask miroslav-gruevski/snapshift/snapshift
 ```
 
-Homebrew downloads the latest signed `.dmg` from GitHub Releases, drops it into `/Applications`, and removes the macOS quarantine attribute automatically — no "unidentified developer" or "damaged" prompt on first launch.
+Homebrew downloads the latest `.dmg` from GitHub Releases and installs SnapShift into `/Applications`.
+
+SnapShift is a free unsigned build. On recent macOS versions, the first launch can still show:
+
+> Apple could not verify "SnapShift.app" is free of malware.
+
+If that appears:
+
+1. Click **Done**.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll to the **Security** section.
+4. Click **Open Anyway** for SnapShift.
+5. Confirm with Touch ID or your password.
+6. Open SnapShift again.
+
+Future launches should open normally.
 
 ## Update
 
