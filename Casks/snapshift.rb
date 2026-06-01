@@ -1,18 +1,16 @@
 cask "snapshift" do
-  version "0.1.6"
-  # Installer filenames still use 0.1.5 from the Tauri release build.
-  build = "0.1.5"
+  version "0.1.7"
 
   on_arm do
-    url "https://github.com/miroslav-gruevski/SnapShift/releases/download/v#{version}/SnapShift_#{build}_aarch64.dmg",
+    url "https://github.com/miroslav-gruevski/SnapShift/releases/download/v#{version}/SnapShift_#{version}_aarch64.dmg",
         verified: "github.com/miroslav-gruevski/SnapShift/"
-    sha256 "88a8553aa30961361c8d3fe0305031fe310dfbbf3f9bfae098b49737fafa8da6"
+    sha256 "d234162abc1f6f45f8418f4617a2777bb129cd056b0e952b55539d70bee019e7"
   end
 
   on_intel do
-    url "https://github.com/miroslav-gruevski/SnapShift/releases/download/v#{version}/SnapShift_#{build}_x64.dmg",
+    url "https://github.com/miroslav-gruevski/SnapShift/releases/download/v#{version}/SnapShift_#{version}_x64.dmg",
         verified: "github.com/miroslav-gruevski/SnapShift/"
-    sha256 "f933a85f94736b9b2c10172806f91783d9a676f27093d28ea55bd2f0139dccc2"
+    sha256 "ff6be054438668fdeaf988d2fa63b55cef70c1c16d80efc2221103bd63cb0e4e"
   end
 
   name "SnapShift"
